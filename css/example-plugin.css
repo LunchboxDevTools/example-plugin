@@ -1,0 +1,7 @@
+#test-button-target,
+#test-button-target-2 {
+  background: #efefef;
+  border: 1px #ddd solid;
+  margin: 10px 0;
+  padding: 10px;
+}
