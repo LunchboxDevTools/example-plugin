@@ -16,9 +16,7 @@ var ExamplePlugin = function (plugin, dialog) {
 
   // we can optionally use this to save plugin data
   if (typeof plugin.settings == 'undefined') {
-    plugin.settings = {
-      views: {}
-    };
+    plugin.settings = {};
   }
 
   // call parent constructor
@@ -40,6 +38,13 @@ var ExamplePlugin = function (plugin, dialog) {
 
   // dummy examples
   this.constructor_property_1 = 'foo';
+
+  // set default settings structure
+  if (!this.plugin.settings.views) {
+    this.plugin.settings = {
+      views: {}
+    };
+  }
 };
 
 // make sure these lines come immediately after the constructor above,
