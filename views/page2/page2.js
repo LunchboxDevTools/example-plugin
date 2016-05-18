@@ -17,7 +17,7 @@ $(document).ready(function () {
 
   var page2 = exampleplugin.plugin.settings.views.page2;
 
-  // populate the content with anything we may already have
+  // populate the content with anything we may have already saved
   var test_button_target_2 = $('#test-button-target-2');
   test_button_target_2.html(page2.dummy_content);
 
